@@ -11,7 +11,7 @@ npm install -g typescript
 ```
 ## Cloning the code base
 ```
-git clone https://github.com/GO-MADsolutions/arts_consolidated_assignment.git
+git clone https://github.com/GO-MADsolutions/arts_consolidate.git
 ```
 ## Usage
 After successful cloning run the following commands

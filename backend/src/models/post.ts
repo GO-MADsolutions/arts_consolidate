@@ -1,6 +1,5 @@
 import mongoose from 'mongoose';
 import autoIncrement from 'mongoose-auto-increment';
-/* eslint-disable */
 
 interface PostAttrs {
   title: string;
@@ -15,7 +14,6 @@ interface PostDoc extends mongoose.Document {
 }
 
 interface PostModel extends mongoose.Model<any> {
-  /* eslint-disable */
   build(attrs: PostAttrs): PostDoc;
 }
 
@@ -39,7 +37,6 @@ const postSchema = new mongoose.Schema(
   {
     toJSON: {
       transform(doc, ret) {
-        /* eslint-disable */
         ret.id = ret._id;
         delete ret._id;
         delete ret.__v;

@@ -1,6 +1,5 @@
 import mongoose from 'mongoose';
 import autoIncrement from 'mongoose-auto-increment';
-/* eslint-disable */
 
 interface Address{
   street: string;
@@ -38,7 +37,6 @@ interface UserDoc extends mongoose.Document {
 }
 
 interface UserModel extends mongoose.Model<any> {
-  /* eslint-disable */
   build(attrs: UserAttrs): UserDoc;
 }
 
@@ -82,7 +80,6 @@ const userSchema = new mongoose.Schema(
   {
     toJSON: {
       transform(doc, ret) {
-        /* eslint-disable */
         ret.id = ret._id;
         delete ret._id;
         delete ret.__v;
